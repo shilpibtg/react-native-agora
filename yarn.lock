@@ -4931,6 +4931,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"agora-react-native-rtm@github:AgoraIO-Extensions/agora-react-native-rtm#tag=2.1.7":
+  version: 2.1.7
+  resolution: "agora-react-native-rtm@https://github.com/AgoraIO-Extensions/agora-react-native-rtm.git#commit=452071f78da7b3fc11fb0b9a3e3d5d6f00d2bb31"
+  dependencies:
+    buffer: ^6.0.3
+    eventemitter3: ^5.0.1
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 5edb3f35932863e4e08f980cbc74dd44835f6bbfb9e9df2245a9181cbeae43c44e4c7ea14165a31e6f36f3b32b03cecf85103ac1ff2bad9f4bd8aa7c18ce71e6
+  languageName: node
+  linkType: hard
+
 "ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
@@ -13497,6 +13510,7 @@ __metadata:
     "@react-navigation/stack": ^6.3.16
     "@rneui/base": ^4.0.0-rc.7
     "@rneui/themed": ^4.0.0-rc.7
+    agora-react-native-rtm: "github:AgoraIO-Extensions/agora-react-native-rtm#tag=2.1.7"
     babel-plugin-module-resolver: ^5.0.0
     detox: ^20.13.0
     jest: ^29.5.0

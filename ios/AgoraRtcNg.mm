@@ -15,6 +15,7 @@
 
 namespace agora {
 namespace iris {
+namespace rtc {
 class EventHandler : public IrisEventHandler {
 public:
     EventHandler(void *plugin) {
@@ -51,10 +52,11 @@ private:
 };
 }
 }
+}
 
 @interface AgoraRtcNg ()
 
-@property(nonatomic) agora::iris::EventHandler *eventHandler;
+@property(nonatomic) agora::iris::rtc::EventHandler *eventHandler;
 
 @end
 
@@ -70,7 +72,7 @@ RCT_EXPORT_MODULE()
 - (instancetype)init {
     if (self = [super init]) {
         self.irisApiEngine = nullptr;
-        self.eventHandler = new agora::iris::EventHandler((__bridge void *)self);
+        self.eventHandler = new agora::iris::rtc::EventHandler((__bridge void *)self);
         instance = self;
     }
     return instance;

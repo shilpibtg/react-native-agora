@@ -1,3 +1,10 @@
+import {
+  RTM_AREA_CODE,
+  RtmConfig,
+  RtmEncryptionConfig,
+  RtmProxyConfig,
+  createAgoraRtmClient,
+} from 'agora-react-native-rtm/src/index';
 import React, { ReactElement } from 'react';
 import { Platform } from 'react-native';
 import {
@@ -90,6 +97,21 @@ export default class JoinChannelVideo
     // Start preview before joinChannel
     this.engine.startPreview();
     this.setState({ startPreview: true });
+    let client = createAgoraRtmClient();
+    client.initialize(
+      new RtmConfig({
+        userId: '4456721',
+        appId: appId || 'cd1f455efba8496caef1db648f0849b1',
+        areaCode: RTM_AREA_CODE.RTM_AREA_CODE_CN,
+        eventHandler: {
+          onLoginResult: () => {
+            console.log('onLoginResult');
+          },
+        },
+      })
+    );
+    client.logout();
+    client.login(appId || 'cd1f455efba8496caef1db648f0849b1');
   }
 
   /**

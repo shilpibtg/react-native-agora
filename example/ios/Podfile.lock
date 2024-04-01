@@ -1,6 +1,13 @@
 PODS:
+  - agora-react-native-rtm (2.1.7):
+    - AgoraIrisRTM_iOS (= 2.1.7-build.1)
+    - AgoraRtm_iOS (= 2.1.7)
+    - RCT-Folly (= 2021.07.22.00)
+    - React-Core
   - AgoraIrisRTC_iOS (4.3.1-dev.7)
+  - AgoraIrisRTM_iOS (2.1.7-build.1)
   - AgoraRtcEngine_iOS_Preview (4.3.1-dev.7)
+  - AgoraRtm_iOS (2.1.7)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -519,6 +526,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - agora-react-native-rtm (from `../node_modules/agora-react-native-rtm`)
   - AgoraRtcEngine_iOS_Preview (= 4.3.1-dev.7)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -598,7 +606,9 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AgoraIrisRTC_iOS
+    - AgoraIrisRTM_iOS
     - AgoraRtcEngine_iOS_Preview
+    - AgoraRtm_iOS
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -615,6 +625,8 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  agora-react-native-rtm:
+    :path: "../node_modules/agora-react-native-rtm"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
@@ -717,8 +729,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  agora-react-native-rtm: db09801b83ccbde861b8261e00bc46a03f8f4136
   AgoraIrisRTC_iOS: b5c790e788a021b0e56984dc7db6eb067aa5e84d
+  AgoraIrisRTM_iOS: 588c042feef52bb2545e3618da1e442f19e2cf5b
   AgoraRtcEngine_iOS_Preview: 4c98243791dc13c93cc68440ab83aca5b402efa0
+  AgoraRtm_iOS: cd26cf8a377a79934864d37e184866dbd1430eaf
   boost: 7dcd2de282d72e344012f7d6564d024930a6a440
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
